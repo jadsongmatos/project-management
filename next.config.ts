@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
-
+import type { NextConfig } from 'next'
+ 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+  output: 'export',
+  images: {
+    unoptimized: true,
+    domains: ['mirrors.creativecommons.org'],
+  },
+  compress: true,
+}
+ 
+export default nextConfig
